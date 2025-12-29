@@ -1,97 +1,139 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Tuff Untested</title>
+  <title>Tuff Untested Builds</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="files.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="files.css">
 </head>
 
 <body>
   <div class="window">
+
+    <!-- HEADER -->
     <header class="title-bar">
       <div class="title">Tuff Untested Builds</div>
       <div class="buttons">
-        <button class="btn-min" aria-label="minimize">─</button>
-        <button class="btn-max" aria-label="maximize">□</button>
-        <button class="btn-close" aria-label="close">✕</button>
+        <button aria-label="minimize">─</button>
+        <button aria-label="maximize">□</button>
+        <button aria-label="close">✕</button>
       </div>
     </header>
 
-    <nav class="menu-bar" aria-label="Main menu">
-      <a>File</a>
-      <a>Edit</a>
-      <a>View</a>
-      <a>Help</a>
+    <!-- MENU -->
+    <nav class="menu-bar">
+      <a href="#">File</a>
+      <a href="#">Edit</a>
+      <a href="#">View</a>
+      <a href="#">Help</a>
     </nav>
 
+    <!-- CONTENT -->
     <main class="content">
+
+      <!-- INTRO / HERO -->
       <section class="intro">
-        <h1>Tuff Client Untested Builds</h1>
-        <p class="lead">Experimental and work-in-progress builds. Use at your own risk.</p>
+        <h1>Tuff Client — Untested Builds</h1>
+        <p class="lead">
+          Experimental, work-in-progress builds.  
+          Expect bugs. Expect chaos. Use at your own risk.
+        </p>
+
         <div class="quick-links">
-          <a class="primary" href="https://github.com/TuffNetwork/TuffX-Plugin/releases/download/1.1.0/TuffX.jar"
-            download>Download Y0 Plugin 1.1.0</a>
-          <a href="https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Errors? Try this
-            first!</a>
+          <a class="primary"
+             href="https://github.com/TuffNetwork/TuffX-Plugin/releases/download/1.1.0/TuffX.jar"
+             download>
+            ⬇ Download Y0 Plugin (1.1.0)
+          </a>
+
+          <a class="secondary"
+             href="https://support.google.com/accounts/answer/32050?hl=en">
+            ⚠ Having issues?
+          </a>
         </div>
       </section>
 
+      <!-- LATEST BUILD -->
       <section class="builds">
-        <h2>Latest Build</h2>
+        <h2>🚀 Latest Build</h2>
+
+        <div class="build-card">
+          <p><strong>Version:</strong> 1.1UD10</p>
+
+          <div class="action-row">
+            <a class="primary" href="files/1_1UD10/WASM/">▶ Play (WASM)</a>
+            <a class="primary" href="files/1_1UD10/JS/">▶ Play (JS)</a>
+          </div>
+
+          <div class="action-row">
+            <a href="files/1_1UD10/WASM/Tuff_Client_Offline_WASM.html" download>
+              ⬇ Offline WASM
+            </a>
+            <a href="files/1_1UD10/JS/Tuff_Client_JS.html" download>
+              ⬇ Offline JS
+            </a>
+          </div>
+
+          <a href="https://github.com/TuffNetwork/Tuff-Client-Builds/releases/tag/1.1UD10">
+            🔗 View release on GitHub
+          </a>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section class="support">
+        <h2>🛠 Support</h2>
         <ul>
-          <li>Play: <a href="files/1_1UD10/WASM/">1.1UD10 (WASM)</a> | <a href="files/1_1UD10/JS/">1.1UT10 (JS)</a></li>
-          <li>Download: <a href="files/1_1UD10/WASM/Tuff_Client_Offline_WASM.html" download>1.1UD10 WASM OFFLINE</a> |
-            <a href="files/1_1UD10/JS/Tuff_Client_JS.html" download>1.1UD10 JS OFFLINE</a></li>
-            <li>Latest Release Builds: <a href="https://github.com/TuffNetwork/Tuff-Client-Builds/releases/tag/1.1UD10">Go</a></li>
+          <li>💬 <a href="https://discord.com/invite/7UnXG6bE3b">Report bugs on Discord</a></li>
+          <li>🧪 <a href="https://github.com/TuffNetwork/BrickTesting">Host your own build</a></li>
+        </ul>
+      </section>
 
-          </ul>
+      <!-- ARCHIVE -->
+      <section class="archive">
+        <h2>📦 Archived Builds</h2>
+        <ul>
+          <li><a href="files/1_1UT9/WASM/">1.1UT9 (WASM)</a></li>
+          <li><a href="files/1_1UT8/WASM/">1.1UT8 (WASM)</a></li>
+          <li><a href="files/1_1UT7/WASM/">1.1UT7 (WASM)</a></li>
+          <li><a href="files/1_1UT6/WASM/">1.1UT6 (WASM)</a></li>
+          <li><a href="files/1_1UT6/JS/">1.1UT6 (JS)</a></li>
+          <li><a href="files/1_1UT5/WASM/">1.1UT5 (WASM)</a></li>
+          <li><a href="files/1_1UT5/JS/">1.1UT5 (JS)</a></li>
+        </ul>
+      </section>
 
+      <!-- RELEASE NOTES -->
+      <aside class="notes">
+        <h3>📝 Release Notes</h3>
+        <p><strong>1.1UD10</strong> — Dec 26, 2025</p>
+        <ul>
+          <li>Major performance optimizations</li>
+          <li>Color configuration + module modifiers</li>
+          <li>Fixed shields</li>
+          <li>Experimental shaders</li>
+          <li>Presets</li>
+          <li>PVP stat tracker</li>
+          <li>Crosshair range</li>
+          <li>Wisp</li>
+          <li>And WAY more</li>
+        </ul>
+      </aside>
 
-        <section class="support">
-          <h2>🛠 Support</h2>
-          <ul>
-            <li><a href="https://discord.com/invite/7UnXG6bE3b">Report Bugs on Discord</a></li>
-            <li><a href="https://github.com/TuffNetwork/BrickTesting">Host Your Own</a></li>
-          </ul>
-        </section>
-
-        <section class="archive">
-          <h2>Archived Builds</h2>
-          <ul>
-            <li><a href="files/1_1UT9/WASM/">1.1UT9 (WASM)</a></li>
-            <li><a href="files/1_1UT8/WASM/">1.1UT8 (WASM)</a></li>
-            <li><a href="files/1_1UT7/WASM/">1.1UT7 (WASM)</a></li>
-            <li><a href="files/1_1UT6/WASM/">1.1UT6 (WASM)</a></li>
-            <li><a href="files/1_1UT6/JS/">1.1UT6 (JS)</a></li>
-            <li><a href="files/1_1UT5/WASM/">1.1UT5 (WASM)</a></li>
-            <li><a href="files/1_1UT5/JS/">1.1UT5 (JS)</a></li>
-          </ul>
-        </section>
-
-        <aside class="notes">
-          <h3>Release Notes</h3>
-          <p><strong>Latest Version:</strong> 1.1UD10 - Merry Christmas! — Published on: Dec 26, 2025</p>
-          <ul>
-            <li>Major optimizations</li>
-            <li>Color Configuration/Module Modifiers Basics</li>
-            <li>Fixed Shields</li>
-            <li>Experimental Features: Shaders</li>
-            <li>Presets</li>
-            <li>PVP Stat Tracker</li>
-            <li>Crosshair Range</li>
-            <li>Wisp</li>
-            <li>And WAYY more!</li>
-          </ul>
-        </aside>
     </main>
 
-    <footer class="status-bar">Status: Active</footer>
+    <!-- FOOTER -->
+    <footer class="status-bar">
+      Status: Active
+    </footer>
+
   </div>
 </body>
-
 </html>
